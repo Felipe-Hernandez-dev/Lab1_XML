@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <xs:simpleType name="EmailTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]+"/>
+      <xs:maxLength value="25"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SalarioTipo">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0"/>
+      <xs:totalDigits value="8"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="EmpleadoTipo">
+    <xs:sequence>
+      <xs:element name="nombre"        type="xs:string"/>
+      <xs:element name="apellido"      type="xs:string"/>
+      <xs:element name="email"         type="EmailTipo"/>
+      <xs:element name="salario"       type="SalarioTipo"/>
+      <xs:element name="fecha_ingreso" type="xs:date"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="DepartamentoTipo">
+    <xs:sequence>
+      <xs:element name="empleado" type="EmpleadoTipo"
+                  minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id"     type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="nombre" type="xs:string"          use="required"/>
+  </xs:complexType>
+
+  <xs:element name="departamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="departamento" type="DepartamentoTipo"
+                    minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

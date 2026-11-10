@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<departamentos>
+  <departamento id="10" nombre="Administration">
+    <empleado id="200">
+      <nombre>Jennifer</nombre>
+      <apellido>Whalen</apellido>
+      <email>JWHALEN</email>
+      <salario>-500</salario>
+      <fecha_ingreso>2013-09-17</fecha_ingreso>
+    </empleado>
+  </departamento>
+  <departamento id="20" nombre="Marketing">
+    <empleado id="201">
+      <nombre>Michael</nombre>
+      <apellido>Martinez</apellido>
+      <email>MMARTINE</email>
+      <salario>13000</salario>
+      <fecha_ingreso>2014-02-17</fecha_ingreso>
+    </empleado>
+    <empleado id="202">
+      <nombre>Pat</nombre>
+      <apellido>Davis</apellido>
+      <email>PDAVIS</email>
+      <salario>6000</salario>
+      <fecha_ingreso>2015-08-17</fecha_ingreso>
+    </empleado>
+  </departamento>
+  <departamento id="60" nombre="IT">
+    <empleado id="103">
+      <nombre>Alexander</nombre>
+      <apellido>James</apellido>
+      <email>AJAMES</email>
+      <salario>9000</salario>
+      <fecha_ingreso>2016-01-03</fecha_ingreso>
+    </empleado>
+    <empleado id="104">
+      <nombre>Bruce</nombre>
+      <apellido>Miller</apellido>
+      <email>BMILLER</email>
+      <salario>6000</salario>
+      <fecha_ingreso>2017-05-21</fecha_ingreso>
+    </empleado>
+    <empleado id="105">
+      <nombre>David</nombre>
+      <apellido>Williams</apellido>
+      <email>DWILLIAMS</email>
+      <salario>4800</salario>
+      <fecha_ingreso>2015-06-25</fecha_ingreso>
+    </empleado>
+    <empleado id="106">
+      <nombre>Valli</nombre>
+      <apellido>Jackson</apellido>
+      <email>VJACKSON</email>
+      <salario>4800</salario>
+      <fecha_ingreso>2016-02-05</fecha_ingreso>
+    </empleado>
+    <empleado id="107">
+      <nombre>Diana</nombre>
+      <apellido>Nguyen</apellido>
+      <email>DNGUYEN</email>
+      <salario>4200</salario>
+      <fecha_ingreso>2017-02-07</fecha_ingreso>
+    </empleado>
+  </departamento>
+</departamentos>
